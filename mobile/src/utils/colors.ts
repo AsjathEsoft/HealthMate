@@ -1,0 +1,119 @@
+// Color palettes for Light Mode and Dark Mode in HealthMate
+
+export interface ThemeColors {
+  primary: string;
+  primaryLight: string;
+  actionText: string;
+  background: string;
+  surfaceSecondary: string;
+  surfaceBorder: string;
+  text: string;
+  textMuted: string;
+  textSubtle: string;
+  card: string;
+  cardBorder: string;
+  border: string;
+  inputBg: string;
+  inputBorder: string;
+  error: string;
+  errorBg: string;
+  errorBorder: string;
+  success: string;
+  warning: string;
+  calories: string;
+  caloriesBg: string;
+  water: string;
+  waterBg: string;
+  stepRing: string;
+  stepRingTrack: string;
+  statusSuccessBg: string;
+  statusSuccessText: string;
+  statusWarningBg: string;
+  statusWarningText: string;
+  headerIconBg: string;
+  headerIconBorder: string;
+  tabBarBg: string;
+  tabBarBorder: string;
+  tabBarActive: string;
+  tabBarInactive: string;
+  tabBarActivePill: string;
+}
+
+export const lightColors: ThemeColors = {
+  primary: '#0066ff',
+  primaryLight: '#ebf3ff',
+  actionText: '#ffffff',
+  background: '#f4f7fb',
+  surfaceSecondary: '#eef3f9',
+  surfaceBorder: '#e2eaf4',
+  text: '#0b192c',
+  textMuted: '#64748b',
+  textSubtle: '#94a3b8',
+  card: '#ffffff',
+  cardBorder: '#e5edf6',
+  border: '#e2eaf4',
+  inputBg: '#ffffff',
+  inputBorder: '#cbd5e1',
+  error: '#dc2626',
+  errorBg: '#fef2f2',
+  errorBorder: '#fecaca',
+  success: '#16a34a',
+  warning: '#d97706',
+  calories: '#ff6b00',
+  caloriesBg: '#fff3e0',
+  water: '#00a8b5',
+  waterBg: '#e0f7fa',
+  stepRing: '#00b4d8',
+  stepRingTrack: '#e8f0f8',
+  statusSuccessBg: '#eaf8f0',
+  statusSuccessText: '#15803d',
+  statusWarningBg: '#fffbeb',
+  statusWarningText: '#b45309',
+  headerIconBg: '#ffffff',
+  headerIconBorder: '#e2eaf4',
+  tabBarBg: '#ffffff',
+  tabBarBorder: '#e5edf6',
+  tabBarActive: '#0066ff',
+  tabBarInactive: '#94a3b8',
+  tabBarActivePill: '#ebf3ff',
+};
+
+export const darkColors: ThemeColors = {
+  primary: '#00c2cb',
+  primaryLight: '#0d2b38',
+  actionText: '#060d1a',
+  background: '#080e1a',
+  surfaceSecondary: '#18253b',
+  surfaceBorder: '#1e2e48',
+  text: '#ffffff',
+  textMuted: '#94a3b8',
+  textSubtle: '#64748b',
+  card: '#121c2d',
+  cardBorder: '#1c2b42',
+  border: '#243652',
+  inputBg: '#0f1728',
+  inputBorder: '#243652',
+  error: '#f87171',
+  errorBg: '#381014',
+  errorBorder: '#7f1d1d',
+  success: '#22c55e',
+  warning: '#fbbf24',
+  calories: '#ff7a1a',
+  caloriesBg: '#2f1a0e',
+  water: '#00c2cb',
+  waterBg: '#0c2b38',
+  stepRing: '#00c2cb',
+  stepRingTrack: '#192841',
+  statusSuccessBg: '#0e291c',
+  statusSuccessText: '#86efac',
+  statusWarningBg: '#2b2005',
+  statusWarningText: '#fde047',
+  headerIconBg: '#121c2d',
+  headerIconBorder: '#1c2b42',
+  tabBarBg: '#111a29',
+  tabBarBorder: '#1c2b42',
+  tabBarActive: '#00c2cb',
+  tabBarInactive: '#64748b',
+  tabBarActivePill: '#0e2938',
+};
+
