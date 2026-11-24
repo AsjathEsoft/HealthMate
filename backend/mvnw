@@ -1,0 +1,21 @@
+#!/bin/sh
+set -e
+
+if command -v mvn >/dev/null 2>&1; then
+  exec mvn "$@"
+fi
+
+MAVEN_VERSION="3.9.9"
+WRAPPER_BASE="$HOME/.m2/wrapper/dists/apache-maven-$MAVEN_VERSION"
+MVN_BIN="$WRAPPER_BASE/apache-maven-$MAVEN_VERSION/bin/mvn"
+
+if [ ! -x "$MVN_BIN" ]; then
+  echo "Downloading Apache Maven $MAVEN_VERSION..."
+  mkdir -p "$WRAPPER_BASE"
+  curl -fsSL "https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/$MAVEN_VERSION/apache-maven-$MAVEN_VERSION-bin.zip" -o "$WRAPPER_BASE/maven.zip"
+  unzip -q -o "$WRAPPER_BASE/maven.zip" -d "$WRAPPER_BASE"
+  rm -f "$WRAPPER_BASE/maven.zip"
+fi
+
+exec "$MVN_BIN" "$@"
+
